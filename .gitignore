@@ -2,3 +2,4 @@
 .impeccable/ref/
 .impeccable/decision.json
 .impeccable/config.local.json
+.wrangler/
