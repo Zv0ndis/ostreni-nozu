@@ -11,6 +11,24 @@
         ],
         "createdAt": "2026-10-26T10:03:36.399Z",
         "reason": "agent: uppercase only on h1/h2 headings and short .label/th labels, no body passages"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-26T10:25:00.669Z",
+        "reason": "agent: h1 renders ~4-11.5rem and h2 3.5-7.5rem vs 1.06rem body (verified in screenshots); detector misreads clamp() sizes"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-26T10:25:00.677Z",
+        "reason": "agent + finish reviewer: .field has 64-128px block / 16px+ inline padding, .grit 28px/20-36px; detector misreads clamp() padding"
       }
     ]
   }

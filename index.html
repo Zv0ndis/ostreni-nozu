@@ -127,21 +127,28 @@ a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px;
 .copy:hover { color: var(--bone); }
 footer { background: var(--ink); color: var(--bone-dim); padding: 28px var(--gutter) 40px; font-size: .9rem; display: flex; flex-wrap: wrap; gap: 4px 24px; }
 
-/* motion: one staccato cut-in, like paper shapes jumping between frames */
+/* motion: paper shapes glide into place, then drift with the scroll */
 @media (prefers-reduced-motion: no-preference) {
-  .blade svg { animation: cut-in .9s steps(5, end) .15s backwards; }
-  .hero h1 span { animation: card-in .6s steps(3, end) backwards; }
-  .hero h1 span:nth-child(2) { animation-delay: .25s; }
-  .hero-copy p, .cta { animation: card-in .5s steps(2, end) .55s backwards; }
-  .edge-line { stroke-dasharray: 8 10; animation: jitter .5s steps(2, end) infinite; }
+  .blade svg { animation: cut-in 1.4s var(--ease) .2s backwards; }
+  .hero h1 span { animation: reveal 1.1s var(--ease) backwards; }
+  .hero h1 span:nth-child(2) { animation-delay: .15s; }
+  .hero-copy p { animation: fade-up 1s var(--ease) .5s backwards; }
+  .cta { animation: fade-up 1s var(--ease) .65s backwards; }
+  .edge-line { stroke-dasharray: 10 8; animation: flow 1.6s linear infinite; }
   @supports (animation-timeline: view()) {
-    .grit, .steps li, .credits li { animation: cut-up steps(4, end) both; animation-timeline: view(); animation-range: entry 5% entry 60%; }
+    .blade { animation: drift linear both; animation-timeline: scroll(root); animation-range: 0 100vh; }
+    .grit, .steps li, .credits li { animation: rise var(--ease) both; animation-timeline: view(); animation-range: entry 0% cover 30%; }
+    .grit:nth-child(2) { animation-range: entry 5% cover 35%; }
+    .grit:nth-child(3) { animation-range: entry 10% cover 40%; }
+    .grit:nth-child(4) { animation-range: entry 15% cover 45%; }
   }
 }
-@keyframes cut-in { from { transform: translate(18%, -10%) rotate(8deg); } }
-@keyframes card-in { from { opacity: 0; transform: translateY(24px); } }
-@keyframes jitter { 50% { transform: translate(1px, -1.5px); stroke-dashoffset: 9; } }
-@keyframes cut-up { from { clip-path: inset(100% 0 0 0); transform: translateY(28px); } to { clip-path: inset(0); transform: none; } }
+@keyframes cut-in { from { opacity: 0; transform: translate(14%, -8%) rotate(6deg); } }
+@keyframes reveal { from { clip-path: inset(0 0 100% 0); transform: translateY(35%); } to { clip-path: inset(-20% 0 -20% 0); } }
+@keyframes fade-up { from { opacity: 0; transform: translateY(20px); filter: blur(6px); } }
+@keyframes flow { to { stroke-dashoffset: -36; } }
+@keyframes drift { to { translate: 0 -10vh; } }
+@keyframes rise { from { opacity: 0; transform: translateY(48px); clip-path: inset(0 0 40% 0); } to { opacity: 1; transform: none; clip-path: inset(-10% 0 -10% 0); } }
 
 @media (max-width: 900px) {
   .hero-body { grid-template-columns: 1fr; }
