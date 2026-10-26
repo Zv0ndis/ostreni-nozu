@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ostření nožů</title>
+<meta name="description" content="Ruční ostření nožů, nůžek a dlát na vodních kamenech.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --bg: #eef0f1; --surface: #ffffff; --fg: #1b2228; --muted: #5a6670;
+  --line: #cfd5d9; --accent: #1f5f7a; --stone: #b38a4a;
+  --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #13181c; --surface: #1b2228; --fg: #e6eaed; --muted: #9aa6ae;
+  --line: #2e3840; --accent: #6fb3d1; --stone: #d4a95f; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #13181c; --surface: #1b2228; --fg: #e6eaed; --muted: #9aa6ae;
+  --line: #2e3840; --accent: #6fb3d1; --stone: #d4a95f; color-scheme: dark }
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 var(--body); }
+.wrap { max-width: 920px; margin: 0 auto; padding-block: 48px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 72px; }
+h1, h2 { font-family: var(--display); font-weight: 900; line-height: .95; margin: 0; text-wrap: balance; text-transform: uppercase; }
+h1 { font-size: clamp(3rem, 11vw, 6.5rem); letter-spacing: -.01em; }
+h2 { font-size: clamp(2rem, 6vw, 3rem); }
+p { margin: 0; max-width: 62ch; }
+.label { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: center; }
+.hero > * { min-width: 0; }
+.hero-text { display: grid; gap: 20px; }
+.hero-text h1 span { color: var(--accent); }
+.lead { font-size: 1.2rem; color: var(--muted); }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn { font: 600 1rem var(--body); padding: 12px 20px; border-radius: 4px; border: 2px solid var(--accent);
+  background: var(--accent); color: var(--bg); cursor: pointer; text-decoration: none; }
+.btn.ghost { background: transparent; color: var(--accent); }
+.edge { margin: 0; }
+.edge svg { width: 100%; height: auto; display: block; }
+
+section { display: grid; gap: 24px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 14px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+td.price { text-align: right; font: 500 1.05rem var(--mono); white-space: nowrap; }
+th.price { text-align: right; }
+td small { display: block; color: var(--muted); font-size: .9rem; }
+.note { color: var(--muted); font-size: .95rem; }
+
+.grit { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.grit div { padding: 16px; display: grid; gap: 6px; background: var(--surface); border-right: 1px solid var(--line); }
+.grit div:last-child { border-right: 0; }
+.grit b { font: 500 1.4rem var(--mono); color: var(--stone); }
+.grit span { font-size: .95rem; color: var(--muted); }
+
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; list-style: none; padding: 0; margin: 0; counter-reset: s; }
+.steps li { display: grid; gap: 8px; align-content: start; counter-increment: s; }
+.steps li::before { content: counter(s); font: 900 2.5rem/1 var(--display); color: var(--stone); }
+.steps h3 { margin: 0; font-size: 1.1rem; }
+.steps p { color: var(--muted); }
+
+.contact { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 28px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+.contact div { display: grid; gap: 6px; align-content: start; }
+.contact .val { font: 500 1.25rem var(--mono); user-select: all; overflow-wrap: anywhere; }
+.copy { justify-self: start; font: 500 13px var(--mono); background: none; border: 1px solid var(--line); color: var(--fg); padding: 6px 10px; border-radius: 4px; cursor: pointer; }
+footer { color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); padding-top: 20px; }
+
+@media (max-width: 720px) {
+  .hero { grid-template-columns: 1fr; }
+  .grit { grid-template-columns: repeat(2, 1fr); }
+  .grit div:nth-child(2) { border-right: 0; }
+  .grit div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .steps { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-text">
+      <span class="label">Ruční ostření na vodních kamenech</span>
+      <h1>Nože, co <span>zase řežou.</span></h1>
+      <p class="lead">Kuchyňské, japonské, lovecké i kapesní nože. Nůžky a dláta. Ostřím ručně na kamenech, bez pásové brusky, takže ocel se nepřehřeje a nůž vydrží déle.</p>
+      <div class="cta">
+        <a class="btn" href="#kontakt">Domluvit ostření</a>
+        <a class="btn ghost" href="#cenik">Ceník</a>
+      </div>
+    </div>
+    <figure class="edge" aria-label="Úhel ostří: 15° pro japonské nože, 20° pro evropské">
+      <svg viewBox="0 0 320 260" role="img">
+        <line x1="160" y1="20" x2="160" y2="240" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 4" fill="none"/>
+        <path d="M160 230 L110 30 L210 30 Z" fill="var(--surface)" stroke="var(--fg)" stroke-width="2"/>
+        <path d="M160 230 L132 118 L188 118 Z" fill="var(--accent)" opacity=".18"/>
+        <path d="M160 190 A40 40 0 0 1 170 191" stroke="var(--stone)" stroke-width="3" fill="none"/>
+        <text x="176" y="198" font-family="IBM Plex Mono, monospace" font-size="14" fill="var(--stone)">15°–20°</text>
+        <text x="20" y="250" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">PRŮŘEZ ČEPELÍ</text>
+        <text x="216" y="40" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">hřbet</text>
+        <text x="176" y="236" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">ostří</text>
+      </svg>
+    </figure>
+  </header>
+
+  <main style="display:grid;gap:72px">
+  <section id="cenik">
+    <span class="label">Ceník</span>
+    <h2>Co naostřím</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Nástroj</th><th class="price">Cena</th></tr></thead>
+        <tbody>
+          <tr><td>Kuchyňský nůž, evropský<small>úhel 20°, do 20 cm čepele</small></td><td class="price">120 Kč</td></tr>
+          <tr><td>Japonský nůž<small>úhel 15°, jednostranný i oboustranný výbrus</small></td><td class="price">250 Kč</td></tr>
+          <tr><td>Nůž s vlnitým ostřím<small>pilka na chleba</small></td><td class="price">150 Kč</td></tr>
+          <tr><td>Kapesní a lovecký nůž</td><td class="price">120 Kč</td></tr>
+          <tr><td>Nůžky<small>krejčovské, kuchyňské, kadeřnické</small></td><td class="price">150 Kč</td></tr>
+          <tr><td>Dláto, hoblíkový nůž</td><td class="price">150 Kč</td></tr>
+          <tr><td>Oprava vylomeného ostří nebo zlomené špičky</td><td class="price">od 100 Kč</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Od 5 nožů najednou sleva 10 %. Ceny jsou orientační, konečnou řeknu po prohlédnutí nože.</p>
+  </section>
+
+  <section>
+    <span class="label">Postup</span>
+    <h2>Od hrubého po zrcadlo</h2>
+    <p>Každý nůž projde několika kameny podle stavu ostří. Číslo udává zrnitost: čím vyšší, tím jemnější.</p>
+    <div class="grit">
+      <div><b>#240</b><span>oprava vylomenin a tvaru</span></div>
+      <div><b>#1000</b><span>založení nového ostří</span></div>
+      <div><b>#3000</b><span>doladění a odstranění otřepu</span></div>
+      <div><b>#6000</b><span>leštění, řeže papír i rajče</span></div>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Jak to probíhá</span>
+    <h2>Předání nožů</h2>
+    <ol class="steps">
+      <li><h3>Ozvěte se</h3><p>Zavolejte nebo napište, kolik a jakých nožů máte.</p></li>
+      <li><h3>Předejte nože</h3><p>Osobně po domluvě, nebo poštou. Nože zabalte do kartonu, ostřím dovnitř.</p></li>
+      <li><h3>Vyzvedněte</h3><p>Obvykle do 3 pracovních dnů. Platba hotově nebo převodem.</p></li>
+    </ol>
+  </section>
+
+  <section id="kontakt">
+    <span class="label">Kontakt</span>
+    <h2>Domluvme se</h2>
+    <div class="contact">
+      <div><span class="label">Telefon</span><span class="val" id="tel">+420 000 000 000</span><button class="copy" data-copy="tel" type="button">Kopírovat</button></div>
+      <div><span class="label">E-mail</span><span class="val" id="mail">info@vasedomena.cz</span><button class="copy" data-copy="mail" type="button">Kopírovat</button></div>
+      <div><span class="label">Kde</span><span class="val">Vaše město</span><span class="note">Po–Pá 16–19, So po domluvě</span></div>
+    </div>
+  </section>
+  </main>
+
+  <footer>Jméno Příjmení · IČO 00000000 · Fyzická osoba zapsaná v živnostenském rejstříku</footer>
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+  const el = document.getElementById(b.dataset.copy);
+  navigator.clipboard.writeText(el.textContent).then(() => { b.textContent = 'Zkopírováno'; })
+    .catch(() => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); });
+}));
+</script>
+</body>
+</html>
