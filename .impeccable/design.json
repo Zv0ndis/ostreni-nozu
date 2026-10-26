@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T12:00:00Z",
+  "title": "Design System: Ostření nožů",
+  "extensions": {
+    "colorMeta": {
+      "cardinal": {
+        "role": "primary",
+        "displayName": "Cardinal Orange",
+        "canonical": "oklch(51.4% 0.161 36.0)",
+        "tonalRamp": [
+          "oklch(15% 0.160 36.0)",
+          "oklch(26% 0.160 36.0)",
+          "oklch(37% 0.160 36.0)",
+          "oklch(48% 0.160 36.0)",
+          "oklch(59% 0.160 36.0)",
+          "oklch(70% 0.160 36.0)",
+          "oklch(82% 0.160 36.0)",
+          "oklch(95% 0.160 36.0)"
+        ]
+      },
+      "ember": {
+        "role": "secondary",
+        "displayName": "Ember",
+        "canonical": "oklch(64.3% 0.172 40.7)",
+        "tonalRamp": [
+          "oklch(15% 0.160 40.7)",
+          "oklch(26% 0.160 40.7)",
+          "oklch(37% 0.160 40.7)",
+          "oklch(48% 0.160 40.7)",
+          "oklch(59% 0.160 40.7)",
+          "oklch(70% 0.160 40.7)",
+          "oklch(82% 0.160 40.7)",
+          "oklch(95% 0.160 40.7)"
+        ]
+      },
+      "midnight": {
+        "role": "tertiary",
+        "displayName": "Midnight",
+        "canonical": "oklch(38.4% 0.048 238.5)",
+        "tonalRamp": [
+          "oklch(15% 0.048 238.5)",
+          "oklch(26% 0.048 238.5)",
+          "oklch(37% 0.048 238.5)",
+          "oklch(48% 0.048 238.5)",
+          "oklch(59% 0.048 238.5)",
+          "oklch(70% 0.048 238.5)",
+          "oklch(82% 0.048 238.5)",
+          "oklch(95% 0.048 238.5)"
+        ]
+      },
+      "olive": {
+        "role": "tertiary",
+        "displayName": "Olive",
+        "canonical": "oklch(47.2% 0.037 105.7)",
+        "tonalRamp": [
+          "oklch(15% 0.037 105.7)",
+          "oklch(26% 0.037 105.7)",
+          "oklch(37% 0.037 105.7)",
+          "oklch(48% 0.037 105.7)",
+          "oklch(59% 0.037 105.7)",
+          "oklch(70% 0.037 105.7)",
+          "oklch(82% 0.037 105.7)",
+          "oklch(95% 0.037 105.7)"
+        ]
+      },
+      "ochre": {
+        "role": "tertiary",
+        "displayName": "Ochre",
+        "canonical": "oklch(64.5% 0.133 64.8)",
+        "tonalRamp": [
+          "oklch(15% 0.133 64.8)",
+          "oklch(26% 0.133 64.8)",
+          "oklch(37% 0.133 64.8)",
+          "oklch(48% 0.133 64.8)",
+          "oklch(59% 0.133 64.8)",
+          "oklch(70% 0.133 64.8)",
+          "oklch(82% 0.133 64.8)",
+          "oklch(95% 0.133 64.8)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(18.8% 0.009 84.6)",
+        "tonalRamp": [
+          "oklch(15% 0.009 84.6)",
+          "oklch(26% 0.009 84.6)",
+          "oklch(37% 0.009 84.6)",
+          "oklch(48% 0.009 84.6)",
+          "oklch(59% 0.009 84.6)",
+          "oklch(70% 0.009 84.6)",
+          "oklch(82% 0.009 84.6)",
+          "oklch(95% 0.009 84.6)"
+        ]
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Bone",
+        "canonical": "oklch(91.8% 0.028 86.6)",
+        "tonalRamp": [
+          "oklch(15% 0.028 86.6)",
+          "oklch(26% 0.028 86.6)",
+          "oklch(37% 0.028 86.6)",
+          "oklch(48% 0.028 86.6)",
+          "oklch(59% 0.028 86.6)",
+          "oklch(70% 0.028 86.6)",
+          "oklch(82% 0.028 86.6)",
+          "oklch(95% 0.028 86.6)"
+        ]
+      },
+      "bone-dim": {
+        "role": "neutral",
+        "displayName": "Dim Bone",
+        "canonical": "oklch(77.2% 0.030 86.7)",
+        "tonalRamp": [
+          "oklch(15% 0.030 86.7)",
+          "oklch(26% 0.030 86.7)",
+          "oklch(37% 0.030 86.7)",
+          "oklch(48% 0.030 86.7)",
+          "oklch(59% 0.030 86.7)",
+          "oklch(70% 0.030 86.7)",
+          "oklch(82% 0.030 86.7)",
+          "oklch(95% 0.030 86.7)"
+        ]
+      },
+      "on-paper-dim": {
+        "role": "neutral",
+        "displayName": "Dim Ink",
+        "canonical": "oklch(40.0% 0.020 82.7)",
+        "tonalRamp": [
+          "oklch(15% 0.020 82.7)",
+          "oklch(26% 0.020 82.7)",
+          "oklch(37% 0.020 82.7)",
+          "oklch(48% 0.020 82.7)",
+          "oklch(59% 0.020 82.7)",
+          "oklch(70% 0.020 82.7)",
+          "oklch(82% 0.020 82.7)",
+          "oklch(95% 0.020 82.7)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only, two lines, second shifted and rotated."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles, step titles, phone number."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Price-list items and prices, contact values."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Barlow reading text, 22-52ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Nav links and contact field names, wide tracking."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Button labels."
+      },
+      "utility": {
+        "displayName": "Utility",
+        "purpose": "Copy-to-clipboard text button."
+      }
+    },
+    "shadows": [],
+    "textures": [
+      {
+        "name": "paper-grain",
+        "value": "fixed full-viewport fractalNoise SVG (baseFrequency .9, 3 octaves), opacity .14, mix-blend-mode multiply",
+        "purpose": "One printed-stock grain over the whole page; never on scrolling layers."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Hover transitions on buttons (.35s) and grit shards (.6s)."
+      },
+      {
+        "name": "cut-in",
+        "value": "steps(5, end) .9s",
+        "purpose": "Hero blade jumps in from upper right."
+      },
+      {
+        "name": "card-in",
+        "value": "steps(3, end) .6s",
+        "purpose": "Headline lines and hero copy appear in frames."
+      },
+      {
+        "name": "cut-up",
+        "value": "steps(4, end), animation-timeline: view(), range entry 5% to entry 60%",
+        "purpose": "Credits, grit cards and steps cut up from the bottom on scroll."
+      },
+      {
+        "name": "jitter",
+        "value": "steps(2, end) .5s infinite",
+        "purpose": "Dashed edge line marking the live element."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "900px"
+      },
+      {
+        "name": "sm",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ink paper slip for the main call to action (call).",
+      "html": "<div class=\"ds-field-cardinal\"><a class=\"ds-btn\" href=\"#\">Zavolat</a></div>",
+      "css": ":root{--cardinal:#b03916;--ember:#e0602c;--ink:#15130f;--bone:#ece3cf;--bone-dim:#bdb4a0;--olive:#5e5d45;--midnight:#2a475a;--ochre:#c47a22;--display:'League Gothic','Arial Narrow',sans-serif;--body:'Barlow','Segoe UI',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1)} .ds-field-cardinal{background:var(--cardinal,#b03916);padding:32px} .ds-btn{display:inline-block;font:400 1.5rem/1 var(--display);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:.7em 1.4em .6em;background:var(--ink,#15130f);color:var(--bone,#ece3cf);clip-path:polygon(0 4%,100% 0,98.5% 100%,1% 94%);transition:transform .35s var(--ease),background-color .2s} .ds-btn:hover{transform:rotate(-1.5deg) translateY(-2px)} .ds-btn:active{transform:translateY(1px)} .ds-btn:focus-visible{outline:3px solid var(--bone,#ece3cf);outline-offset:4px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on cardinal: bone outline, fills bone on hover.",
+      "html": "<div class=\"ds-field-cardinal\"><a class=\"ds-btn-ghost\" href=\"#\">Ceník</a></div>",
+      "css": ":root{--cardinal:#b03916;--ember:#e0602c;--ink:#15130f;--bone:#ece3cf;--bone-dim:#bdb4a0;--olive:#5e5d45;--midnight:#2a475a;--ochre:#c47a22;--display:'League Gothic','Arial Narrow',sans-serif;--body:'Barlow','Segoe UI',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1)} .ds-field-cardinal{background:var(--cardinal,#b03916);padding:32px} .ds-btn-ghost{display:inline-block;font:400 1.5rem/1 var(--display);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:.7em 1.4em .6em;background:transparent;color:var(--bone,#ece3cf);box-shadow:inset 0 0 0 2px var(--bone,#ece3cf);transition:transform .35s var(--ease),background-color .2s} .ds-btn-ghost:hover{background:var(--bone,#ece3cf);color:var(--cardinal,#b03916);transform:rotate(-1.5deg) translateY(-2px)} .ds-btn-ghost:focus-visible{outline:3px solid var(--bone,#ece3cf);outline-offset:4px}"
+    },
+    {
+      "name": "Top Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Wordmark left, three display-caps links right, underline on hover.",
+      "html": "<div class=\"ds-top\"><a class=\"ds-mark\" href=\"#\">Ostření nožů</a><nav class=\"ds-nav\"><a href=\"#\">Ceník</a><a href=\"#\">Postup</a><a href=\"#\">Kontakt</a></nav></div>",
+      "css": ":root{--cardinal:#b03916;--ember:#e0602c;--ink:#15130f;--bone:#ece3cf;--bone-dim:#bdb4a0;--olive:#5e5d45;--midnight:#2a475a;--ochre:#c47a22;--display:'League Gothic','Arial Narrow',sans-serif;--body:'Barlow','Segoe UI',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1)} .ds-top{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px;background:var(--cardinal,#b03916);color:var(--bone,#ece3cf)} .ds-mark{font:400 1.6rem/1 var(--display);letter-spacing:.14em;text-decoration:none;color:inherit} .ds-nav{display:flex;gap:32px} .ds-nav a{font:400 1.2rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:inherit;padding-block:6px;border-bottom:2px solid transparent} .ds-nav a:hover{border-color:var(--bone,#ece3cf)} .ds-nav a:focus-visible,.ds-mark:focus-visible{outline:3px solid var(--bone,#ece3cf);outline-offset:4px}"
+    },
+    {
+      "name": "Credit Line",
+      "kind": "custom",
+      "refersTo": "credit-line",
+      "description": "Price-list entry set as a film credit: item right, price in ember left.",
+      "html": "<ul class=\"ds-credits\"><li><span class=\"ds-what\"><b>Japonský nůž</b><small>úhel 15°</small></span><span class=\"ds-price\">250 Kč</span></li><li><span class=\"ds-what\"><b>Nůžky</b></span><span class=\"ds-price\">150 Kč</span></li></ul>",
+      "css": ":root{--cardinal:#b03916;--ember:#e0602c;--ink:#15130f;--bone:#ece3cf;--bone-dim:#bdb4a0;--olive:#5e5d45;--midnight:#2a475a;--ochre:#c47a22;--display:'League Gothic','Arial Narrow',sans-serif;--body:'Barlow','Segoe UI',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1)} .ds-credits{list-style:none;margin:0;padding:40px 24px;background:var(--ink,#15130f);color:var(--bone,#ece3cf);display:grid;gap:28px;font-family:var(--body)} .ds-credits li{display:grid;grid-template-columns:1fr 1fr;column-gap:48px;align-items:baseline} .ds-what{text-align:right} .ds-what b{display:block;font:400 2.2rem/1 var(--display);letter-spacing:.05em;text-transform:uppercase} .ds-what small{display:block;margin-top:6px;color:var(--bone-dim,#bdb4a0);font-size:.98rem} .ds-price{font:400 2.2rem/1 var(--display);letter-spacing:.06em;color:var(--ember,#e0602c);font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Grit Card",
+      "kind": "card",
+      "refersTo": "grit-card",
+      "description": "Full-height flat colour card in the coarse-to-fine sequence, shards along the bottom.",
+      "html": "<ol class=\"ds-grits\"><li class=\"ds-grit\"><b>#240</b><span>oprava vylomenin a tvaru</span><svg viewBox=\"0 0 300 200\" preserveAspectRatio=\"xMidYMax slice\" aria-hidden=\"true\"><polygon points=\"130,67 81,84 91,36\"/><polygon points=\"74,127 34,150 -0,105 49,76\"/><polygon points=\"132,163 98,126 141,87 164,135\"/><polygon points=\"119,177 156,129 195,154 156,202\"/></svg></li><li class=\"ds-grit ds-ochre\"><b>#1000</b><span>založení nového ostří</span><svg viewBox=\"0 0 300 200\" preserveAspectRatio=\"xMidYMax slice\" aria-hidden=\"true\"><polygon points=\"97,203 79,200 90,178 102,192\"/><polygon points=\"201,148 194,126 221,123\"/><polygon points=\"298,178 279,174 277,155 298,160\"/><polygon points=\"117,190 108,174 117,163 136,177\"/><polygon points=\"156,140 155,114 186,118\"/><polygon points=\"48,187 22,177 29,155 53,157 60,182\"/></svg></li></ol>",
+      "css": ":root{--cardinal:#b03916;--ember:#e0602c;--ink:#15130f;--bone:#ece3cf;--bone-dim:#bdb4a0;--olive:#5e5d45;--midnight:#2a475a;--ochre:#c47a22;--display:'League Gothic','Arial Narrow',sans-serif;--body:'Barlow','Segoe UI',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1)} .ds-grits{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr)} .ds-grit{position:relative;min-height:340px;padding:28px 24px;display:flex;flex-direction:column;gap:10px;overflow:hidden;background:var(--ink,#15130f);color:var(--bone,#ece3cf);font-family:var(--body)} .ds-grit.ds-ochre{background:var(--ochre,#c47a22);color:var(--ink,#15130f)} .ds-grit b{font:400 4.5rem/.9 var(--display);letter-spacing:.02em;position:relative;z-index:1} .ds-grit span{font-size:1.05rem;max-width:22ch;position:relative;z-index:1} .ds-grit svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:62%;fill:currentColor;transition:transform .6s var(--ease)} .ds-grit:hover svg{transform:translateY(-6px) rotate(-.6deg)}"
+    },
+    {
+      "name": "Copy Button",
+      "kind": "button",
+      "refersTo": "copy-button",
+      "description": "Underlined Barlow caps text button that copies the e-mail.",
+      "html": "<div class=\"ds-field-ink\"><button class=\"ds-copy\" type=\"button\">Kopírovat e-mail</button></div>",
+      "css": ":root{--cardinal:#b03916;--ember:#e0602c;--ink:#15130f;--bone:#ece3cf;--bone-dim:#bdb4a0;--olive:#5e5d45;--midnight:#2a475a;--ochre:#c47a22;--display:'League Gothic','Arial Narrow',sans-serif;--body:'Barlow','Segoe UI',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1)} .ds-field-ink{background:var(--ink,#15130f);padding:24px} .ds-copy{font:600 .85rem var(--body);letter-spacing:.06em;text-transform:uppercase;background:none;color:var(--bone-dim,#bdb4a0);border:0;padding:4px 0;border-bottom:1px solid currentColor;cursor:pointer} .ds-copy:hover{color:var(--bone,#ece3cf)} .ds-copy:focus-visible{outline:3px solid var(--ember,#e0602c);outline-offset:4px}"
+    },
+    {
+      "name": "Cut-Paper Hero Blade",
+      "kind": "custom",
+      "description": "Signature: black cut-paper knife on a bone whetstone, jittering dashed edge line.",
+      "html": "<div class=\"ds-field-cardinal\"><svg class=\"ds-blade\" viewBox=\"0 0 700 520\" aria-hidden=\"true\"><g transform=\"rotate(-4 380 400)\"><polygon points=\"150,403 300,399 470,396 641,391 645,431 649,469 480,472 310,476 158,479 154,440\" fill=\"#2a475a\"/><polygon points=\"171,351 330,346 480,343 627,337 629,371 633,405 470,408 320,411 176,415 173,382\" fill=\"#ece3cf\"/></g><g transform=\"translate(40 150) rotate(-14 330 120)\"><polygon fill=\"#15130f\" points=\"0,150 23,133 46,117 76,97 141,94 209,90 283,90 349,86 416,86 452,83 454,121 450,152 453,185 401,186 331,191 261,190 191,189 119,179 61,169\"/><polygon fill=\"#15130f\" points=\"451,77 480,82 476,191 449,188\"/><polygon fill=\"#15130f\" points=\"478,99 541,95 601,96 656,92 691,93 700,119 707,171 641,171 579,175 521,174 477,177\"/><polyline class=\"ds-edge\" points=\"10,157 61,170 120,184 189,191 262,196 331,192 401,191 446,190\"/></g></svg></div>",
+      "css": ":root{--cardinal:#b03916;--ember:#e0602c;--ink:#15130f;--bone:#ece3cf;--bone-dim:#bdb4a0;--olive:#5e5d45;--midnight:#2a475a;--ochre:#c47a22;--display:'League Gothic','Arial Narrow',sans-serif;--body:'Barlow','Segoe UI',system-ui,sans-serif;--ease:cubic-bezier(.16,1,.3,1)} .ds-field-cardinal{background:var(--cardinal,#b03916);padding:32px;overflow:hidden} .ds-blade{display:block;width:100%;height:auto;overflow:visible} .ds-edge{fill:none;stroke:var(--bone,#ece3cf);stroke-width:3;stroke-linecap:round} @media (prefers-reduced-motion:no-preference){.ds-edge{stroke-dasharray:8 10;animation:ds-jitter .5s steps(2,end) infinite}} @keyframes ds-jitter{50%{transform:translate(1px,-1.5px);stroke-dashoffset:9}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Cut-Paper Title Sequence",
+    "overview": "The site plays like the opening titles of a 1960s film: full-bleed flat colour fields cut one after another, black paper silhouettes laid on them at a slight tilt, and tall, skinny condensed capitals that sit just off the baseline. Each field carries one idea. The palette is a set of flat cards (cardinal, ink, bone, midnight, olive, ochre), never a gradient or a tint ramp, and the whole page sits under one fixed paper grain so it reads as printed stock, not a screen.\n\nThe density is low and the scale contrast is extreme. Headlines run to 11.5rem and the reading text stays a calm Barlow at 17px. Shapes are hand-cut polygons with irregular vertices, not geometric primitives. Motion is staccato: shapes jump between positions in stepped frames, the way paper cut-outs move in stop-motion, and never ease smoothly into place on entry.\n\nThe world is light-only by decision. Its colour fields are fixed, so there is no dark-scheme override (`color-scheme: light`).",
+    "keyCharacteristics": [
+      "Full-bleed flat colour fields, one idea per field, alternating cardinal, ink and bone.",
+      "Black cut-paper silhouettes (inline SVG polygons) with slight rotation and irregular edges.",
+      "Skinny condensed uppercase display type with small off-baseline shifts and rotations.",
+      "One fixed paper grain over everything; scrolling layers stay clean.",
+      "Square corners, no elevation, no bordered cards.",
+      "Stepped (`steps()`) motion; a jittering dashed hand-drawn line marks the live element."
+    ],
+    "rules": [
+      {
+        "name": "The Flat Card Rule",
+        "body": "A colour fills a full-bleed field or a whole cut shape. No gradients, no translucent tints, no colour ramps on the page.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ember On Ink Rule",
+        "body": "Ember appears only on ink fields. On cardinal the accent is bone.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "League Gothic is always uppercase and weight 400; Barlow is never uppercase except the utility text button. No third family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Price Rule",
+        "body": "Prices use `font-variant-numeric: tabular-nums` so the credits column lines up.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper Stack Rule",
+        "body": "Depth is shown by laying one cut shape on another, never by a shadow or blur.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Hand-Cut Rule",
+        "body": "Silhouettes are irregular polygons, not circles, rounded rects or icon glyphs.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** give each section its own full-bleed flat field from the palette, one idea per field.",
+      "**Do** draw imagery as hand-cut inline SVG polygons in flat palette colours, rotated a few degrees.",
+      "**Do** set announcements in uppercase League Gothic 400 and reading text in Barlow at 1.0625rem/1.6.",
+      "**Do** use `steps()` timing for entry motion and gate all motion behind `prefers-reduced-motion: no-preference`.",
+      "**Do** set the focus colour per field (bone on cardinal, ember on ink, ink on bone)."
+    ],
+    "donts": [
+      "**Don't** use drop shadows, blur or glow for depth; overlap cut shapes instead.",
+      "**Don't** round corners or draw bordered cards; fields and cards are flat colour edge to edge.",
+      "**Don't** use gradients or tints; every colour is a solid card.",
+      "**Don't** put ember on cardinal or bone; it belongs to ink fields.",
+      "**Don't** add a dark-scheme override; the fields are fixed and the page is light-only.",
+      "**Don't** add raster photos where a cut-paper silhouette can carry the idea."
+    ]
+  }
+}

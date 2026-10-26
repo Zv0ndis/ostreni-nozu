@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "all-caps-body",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-26T10:03:36.399Z",
+        "reason": "agent: uppercase only on h1/h2 headings and short .label/th labels, no body passages"
+      }
+    ]
+  }
+}
